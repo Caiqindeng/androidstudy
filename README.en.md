@@ -1,7 +1,8 @@
 # AndroidStudy
 
 #### Description
-Android学习仓库
+Android study repository
+Corresponding course URL: https://www.icourse163.org/course/JSSVC-1449806164
 
 #### Software Architecture
 Software architecture description
