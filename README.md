@@ -2,6 +2,7 @@
 
 #### 介绍
 Android学习仓库
+配套课程：https://www.icourse163.org/course/JSSVC-1449806164
 
 #### 软件架构
 软件架构说明
