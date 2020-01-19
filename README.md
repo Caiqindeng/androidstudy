@@ -1,7 +1,7 @@
 # AndroidStudy
 
 #### 介绍
-Android学习仓库
+Android学习仓库，主要面向零基础安卓学习者，硬件开发人员，单片机软件开发人员等
 配套课程：https://www.icourse163.org/course/JSSVC-1449806164
 
 #### 软件架构
