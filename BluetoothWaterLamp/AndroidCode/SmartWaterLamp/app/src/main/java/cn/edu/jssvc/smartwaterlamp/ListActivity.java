@@ -58,11 +58,11 @@ public class ListActivity extends Activity {
 
         mBtAdapter = BluetoothAdapter.getDefaultAdapter();
         listAdapter = new ArrayAdapter<>(this, R.layout.device_name);
-        ListView devicelist = findViewById(R.id.listView1);
-        Button findbutton = findViewById(R.id.closebutton);
-        devicelist.setAdapter(listAdapter);
+        ListView lv_device = findViewById(R.id.listView1);
+        Button bt_find = findViewById(R.id.closebutton);
+        lv_device.setAdapter(listAdapter);
 
-        findbutton.setOnClickListener(new OnClickListener() {
+        bt_find.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 mBtAdapter.startDiscovery();
@@ -70,7 +70,7 @@ public class ListActivity extends Activity {
         });
 
         //选择连接设备
-        devicelist.setOnItemClickListener(new OnItemClickListener() {
+        lv_device.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View v, int arg2,
                                     long arg3) {

@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +21,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.UUID;
 
+/**
+ * 配套课程
+ * https://www.icourse163.org/course/JSSVC-1449806164
+ */
 public class MainActivity extends Activity {
 
     private static final int REQUEST_CONNECT_DEVICE = 1;
@@ -44,7 +47,7 @@ public class MainActivity extends Activity {
         tv_rx = findViewById(R.id.tv_rx);
         et_send = findViewById(R.id.et_send);
 
-        LinearLayout ll_blue = findViewById(R.id.ll_blue);
+        Button bt_conn = findViewById(R.id.bt_conn);
         Button bt_send = findViewById(R.id.bt_send);
         Button bt_on = findViewById(R.id.bt_on);
         Button bt_off = findViewById(R.id.bt_off);
@@ -116,7 +119,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        ll_blue.setOnClickListener(new OnClickListener() {
+        bt_conn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 openOptionsMenu();
@@ -227,7 +230,7 @@ public class MainActivity extends Activity {
             if (resultCode == Activity.RESULT_OK) {
                 // 得到链接设备的MAC
                 String address = data.getExtras().getString(
-                        ListActivity.EXTRA_DEVICE_ADDRESS,"");
+                        ListActivity.EXTRA_DEVICE_ADDRESS, "");
                 // 得到BLuetoothDevice对象
                 if (!TextUtils.isEmpty(address)) {
                     BluetoothDevice device = mBtAdapter.getRemoteDevice(address);
@@ -253,7 +256,7 @@ public class MainActivity extends Activity {
         @Override
         public void run() {
 
-            int bytes = 0;
+            int bytes;
             byte[] buffer = new byte[256];
             while (true) {
 
