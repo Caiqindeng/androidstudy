@@ -12,7 +12,12 @@ import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
+/**
+ * @author lwjobs
+ * @version 1.0
+ * @data 2020/1/30
+ * @see <a href="http://www.icourse163.org/course/JSSVC-1449806164">课程链接</a>
+ */
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
