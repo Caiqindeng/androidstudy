@@ -15,4 +15,4 @@ Android Studio 直接打开工程或导入工程
 
 #### 目录说明
 BluetoothWaterLamp：智能蓝牙流水灯
-
+SimpleView：简单UI控件
