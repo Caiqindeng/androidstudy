@@ -14,7 +14,7 @@ JDK8
 Android Studio 直接打开工程或导入工程
 
 #### 微信公众号
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0204/172230_16db9530_948413.png "weixin.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0204/172416_a4713906_948413.png "weixin.png")
 
 #### 目录说明
 BluetoothWaterLamp：智能蓝牙流水灯
