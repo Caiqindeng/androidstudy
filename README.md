@@ -8,6 +8,12 @@ Android学习仓库，主要面向零基础安卓学习者，硬件开发人员�
 #### 开发环境
 Android Studio 3.5.3
 
+gradle-5.4.1
+
+compileSdkVersion 29
+
+buildToolsVersion "29.0.2"
+
 JDK8
 
 #### 安装教程
@@ -20,3 +26,10 @@ Android Studio 直接打开工程或导入工程
 BluetoothWaterLamp：智能蓝牙流水灯
 
 SimpleView：简单UI控件
+
+Activity：活动Activity
+	--ActivityBase：Activity基本操作
+	--ActivityLifeCycle：Activity生命周期
+	--ActivityDataTransfer：Activity数据正向传递
+	--ActivityDataBack：Activity数据逆向传递
+	
