@@ -7,6 +7,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,6 +56,7 @@ public class MainActivity extends Activity {
         Button bt_theme2 = findViewById(R.id.bt_theme2);
 
         mBtAdapter = BluetoothAdapter.getDefaultAdapter();
+
         // 判断蓝牙是否可用
         if (mBtAdapter == null) {
             Toast.makeText(this, "蓝牙是不可用的", Toast.LENGTH_LONG).show();
