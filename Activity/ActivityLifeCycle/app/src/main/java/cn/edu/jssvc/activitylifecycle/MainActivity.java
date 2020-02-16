@@ -1,5 +1,6 @@
 package cn.edu.jssvc.activitylifecycle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,8 +26,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+//                startActivity(intent);
+            AlertDialog dialog;
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this).setTitle("dd");
+            dialog =builder.create();
+            dialog.show();
             }
         });
 

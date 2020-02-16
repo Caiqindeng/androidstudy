@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.ThemedSpinnerAdapter;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(getApplicationContext(),"RB2被选中",Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
