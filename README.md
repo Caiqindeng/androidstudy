@@ -47,4 +47,8 @@ AndroidThread：线程
 
 BluetoothWaterLamp：智能蓝牙流水灯
 
+SelectorTest: 背景布局
+
 SimpleView：简单UI控件
+
+ViewPagerTest：ViewPager
