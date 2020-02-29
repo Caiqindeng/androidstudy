@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MainActivity","D调试信息");
         Log.w("MainActivity","W警告信息");
         Log.e("MainActivity","E错误信息");
+
     }
 }
